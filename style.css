@@ -1,0 +1,1202 @@
+/* gennear code */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url(./font/helvetica-neue-5-cufonfonts/HelveticaNeueMedium.otf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 100px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* pancil section */
+
+.pancil-main {
+    background-color: #EF6A25;
+}
+
+.pancil {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    padding: 9px 0;
+}
+
+.pancil-contact {
+    font-size: 16px;
+    line-height: 18.75px;
+    font-weight: 500;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+}
+
+.pancil-contact p a {
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.pancil-contact p a:hover {
+    color: #000000;
+}
+
+.pancil-order {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+}
+
+.pancil-check {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+input#checkbox {
+    display: none;
+}
+
+.click {
+    position: relative;
+    display: block;
+    width: 59px;
+    height: 28px;
+    background-color: #C4C4C4;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.click::before {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translate(0, -50%);
+    content: "";
+    display: block;
+    width: 21.52px;
+    height: 21.7px;
+    border-radius: 30px;
+    background-color: #373737;
+}
+
+.checkbox:checked+label {
+    background-color: #3753AF;
+}
+
+.checkbox:checked+label:before {
+    left: 31px;
+}
+
+.check-left,
+.check-right {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+}
+
+/* pancil section end */
+
+/* header section */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 55px;
+    /* padding: 32px 0; */
+}
+
+.logo {
+    width: 100%;
+}
+
+.header-search form {
+    position: relative;
+}
+
+.header-search form .search {
+    width: 832px;
+    border: none;
+    padding: 17px 120px 21px 68px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16.41px;
+    font-family: "Roboto", sans-serif;
+    background-color: #F7F7F7;
+    border-radius: 5px;
+    background-image: url(./img/search.png);
+    background-repeat: no-repeat;
+    background-position: 16px;
+}
+
+.header-search form .submit {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.54px;
+    padding: 17px 43px 17px 44px;
+    border: none;
+    position: absolute;
+    font-family: 'Helvetica Neue';
+    right: 0;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    color: #FFFFFF;
+    background-color: #EF6A25;
+}
+
+.header-search form .submit:hover {
+    background-color: #000000;
+    color: #fff;
+}
+
+.header-account {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 110px;
+}
+
+.account-left {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 18px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.selected {
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+    font-family: "Roboto", sans-serif;
+    background: url(./img/drop.png) no-repeat right 5px center;
+    background-size: 10px;
+}
+
+.account-left:hover {
+    background-color: #EF6A25;
+    color: #000000;
+}
+
+.account-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cart-item .item-title {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 14.06px;
+    font-family: "Roboto", sans-serif;
+    color: #3753AF;
+    letter-spacing: 0.04em;
+}
+
+.cart-item .item-price {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.09px;
+    font-family: "Roboto", sans-serif;
+}
+
+.navigation-main {
+    background-color: #F7F7F7;
+}
+
+/* .navigation {
+    padding: 16px 0;
+} */
+
+.navigation nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation ul li {
+    max-width: 135px;
+    padding: 16px;
+    transition: all 0.3s ease-in-out;
+    list-style-type: none;
+    text-align: center;
+}
+
+.navigation ul li:hover {
+    /* color: #ef6a25; */
+    background-color: #e5e5e5;
+}
+
+.pic-title {
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    transition: all 0.3s ease-in-out;
+    font-family: "Roboto", sans-serif;
+    color: #000000;
+}
+
+.pic-title:hover {
+    color: #EF6A25;
+}
+
+/* header section end */
+
+/* heading */
+
+.text-heading {
+    padding: 41px 0 38px;
+    margin-bottom: 43px;
+}
+
+.text-heading p {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37.5px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    color: #EF6A25;
+}
+
+/* heading end */
+
+/* Top Selling Products section */
+
+.products-heading h1 {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 56.25px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    color: #EF6A25;
+}
+
+.list-heading {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    margin: 39px 0 32px;
+}
+
+.list-heading p {
+    width: 6px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #EF6A25;
+}
+
+.list-heading h2 {
+    color: #EF6A25;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35.16px;
+    font-family: "Roboto", sans-serif;
+}
+
+/* .card img {
+    width: 100%;
+} */
+.cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 134px;
+}
+
+.card {
+    background-color: #fff;
+    box-shadow: 0 2px 14px rgba(0, 0, 0, .06);
+}
+
+.card-deprication {
+    /* width: 25%; */
+    padding: 25px 24px;
+}
+
+.card-deprication .card-title {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.09px;
+    color: #807D7E;
+    font-family: "Roboto", sans-serif;
+}
+
+.card-deprication h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.13px;
+    margin: 9px 0 34px;
+    color: #000000;
+    font-family: "Roboto", sans-serif;
+}
+
+.card-price {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.sell-price {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 18px;
+    font-family: "Roboto", sans-serif;
+    color: #EF6A25;
+}
+
+.products-price {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    letter-spacing: 0.05em;
+    font-family: "Roboto", sans-serif;
+    color: #696969;
+    text-decoration-line: line-through;
+}
+
+/* Top Selling Products section end */
+
+/* Wiring Terminals section */
+.sell-main {
+    background-color: #fff4eb;
+}
+
+.sell-section .list-heading {
+    margin: 0 0 32px;
+}
+
+.sell-section {
+    padding: 104px 0 160px;
+}
+
+.sell-section .cards {
+    margin: auto;
+}
+
+/* Wiring Terminals section end */
+
+/* Automotive section */
+
+.automotive .list-heading {
+    margin: 109px 0 32px;
+}
+
+.automotive .cards {
+    margin: auto;
+}
+
+/* Automotive section end */
+
+/* hero top deals section */
+.deals {
+    position: relative;
+    margin: 166px 0 79px;
+}
+
+.deals-section {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 112px;
+    transform: translate(0, -50%);
+    flex-direction: column;
+    gap: 30px;
+}
+
+.deals-section-heading h2 {
+    font-size: 84px;
+    font-weight: 400;
+    line-height: 74px;
+    color: #FFFFFF;
+    font-family: "Koulen", sans-serif;
+}
+
+.deals-section-button a {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 45.1px;
+    color: #FFFFFF;
+    font-family: "Roboto", sans-serif;
+    padding: 20px 40px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+/* hero top deals section end  */
+
+/* footer section */
+.footer-main {
+    background-color: #fff4eb;
+    padding: 47px;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer img {
+    margin-bottom: 50px;
+}
+
+.footer nav ul {
+    display: flex;
+    align-items: center;
+    /* margin: 50px 0 64px; */
+    justify-content: center;
+    list-style-type: none;
+    /* gap: 90px; */
+    padding: 16px 156px 12px 154px;
+}
+
+.footer nav ul li a {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 19.5px;
+    padding: 0 50px;
+    border-right: 1px solid #BDBDBD;
+    font-family: "Roboto", sans-serif;
+    color: #000000;
+}
+
+.footer nav ul li .last {
+    border: none;
+}
+
+.footer-contact {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 64px 0;
+}
+
+/* .contact-list {
+    width: 189px;
+}
+
+.Information-list {
+    width: 132px;
+}
+
+.Shop-By-Categories {
+    width: 162px;
+} */
+
+.contact-list h2,
+.Information-list h2,
+.Shop-By-Categories h2 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.75px;
+    margin-bottom: 16px;
+    color: #000000;
+}
+
+.Shop-By-Categories h2 {
+    margin-bottom: 8px;
+}
+
+.contact-list,
+.Information-list {
+    padding-right: 46px;
+    border-right: 1px solid #BDBDBD;
+}
+
+.contact-list p,
+.Information-list p,
+.Shop-By-Categories p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    color: #000000;
+    font-family: "Roboto", sans-serif;
+}
+
+.mailto {
+    margin: 4px 0 24px;
+}
+
+.rules {
+    margin: 13px 0 14px;
+}
+
+.Shop-By-Categories {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* footer section end */
+
+@media only screen and (min-width: 1024px) {}
+
+@media only screen and (min-width: 1366px) {}
+
+@media only screen and (min-width: 1440px) {
+    .container {
+        padding: 0 70px;
+    }
+
+    /* pancil section */
+
+
+    .pancil {
+        gap: 20px;
+        padding: 8px 0;
+    }
+
+    .pancil-contact {
+        font-size: 15px;
+        line-height: 17px;
+    }
+
+    .pancil-order {
+        font-size: 15px;
+        line-height: 17px;
+    }
+
+    .pancil-check {
+        gap: 13px;
+    }
+
+    .click {
+        width: 59px;
+        height: 28px;
+        border-radius: 30.27px;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .click::before {
+        left: 5px;
+        width: 21.52px;
+        height: 21.7px;
+        border-radius: 30.27px;
+    }
+
+    .checkbox:checked+label:before {
+        left: 31px;
+    }
+
+    .check-left,
+    .check-right {
+        font-size: 15px;
+        line-height: 17px;
+    }
+
+    /* pancil section end */
+
+    /* header section */
+
+    .header {
+        gap: 35px;
+        padding: 30px 0;
+    }
+
+    .header-search form .search {
+        width: 665px;
+        padding: 17px 115px 17px 60px;
+        font-size: 14px;
+        line-height: 15px;
+        background-image: url(./img/search.png);
+        background-position: 16px;
+    }
+
+    .header-search form .submit {
+        font-size: 15px;
+        line-height: 18px;
+        padding: 16px 41px 16px 42px;
+    }
+
+    .header-account {
+        gap: 25px;
+    }
+
+    .account-left {
+        gap: 4px;
+    }
+
+    .select {
+        font-size: 15px;
+        line-height: 17px;
+        background: url(./img/drop.png) no-repeat right 5px center;
+        background-size: 9px;
+    }
+
+    .account-right {
+        gap: 8px;
+    }
+
+    .cart-item .item-title {
+        font-size: 12px;
+        line-height: 14.06px;
+        letter-spacing: 0.04em;
+    }
+
+    .cart-item .item-price {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    /* .navigation {
+        padding: 15px 0;
+    } */
+
+    /* .navigation nav ul {
+        gap: 40px;
+    } */
+
+    /* .navigation ul li {
+        width: 93px;
+    } */
+
+    .pic-title {
+        margin-top: 5px;
+        font-size: 15px;
+        line-height: 17px;
+    }
+
+    /* header section end */
+
+    /* heading */
+    .text-heading {
+        padding: 41px 0 38px;
+        margin-bottom: 43px;
+    }
+
+    .text-heading p {
+        font-size: 32px;
+        line-height: 37.5px;
+    }
+
+    /* heading end */
+
+    /* Top Selling Products section */
+    .products-heading h1 {
+        font-size: 48px;
+        line-height: 56.25px;
+    }
+
+    .list-heading {
+        gap: 17px;
+        margin: 39px 0 32px;
+    }
+
+    .list-heading p {
+        width: 6px;
+        height: 30px;
+        border-radius: 10px;
+    }
+
+    .list-heading h2 {
+        font-size: 30px;
+        line-height: 35.16px;
+    }
+
+    /* .card img {
+        width: 100%;
+    } */
+    .cards {
+        gap: 32px;
+        margin-bottom: 134px;
+    }
+
+    .card-deprication {
+        /* width: 25%; */
+        padding: 25px 24px;
+    }
+
+    .card-deprication .card-title {
+        font-size: 18px;
+        line-height: 21.09px;
+    }
+
+    .card-deprication h3 {
+        font-size: 24px;
+        line-height: 28.13px;
+        margin: 9px 0 34px;
+    }
+
+    .card-price {
+        gap: 8px;
+    }
+
+    .sell-price {
+        font-size: 24px;
+        line-height: 18px;
+    }
+
+    .products-price {
+        font-size: 16px;
+        line-height: 18.75px;
+        letter-spacing: 0.05em;
+    }
+
+    /* Top Selling Products section end */
+
+    /* Wiring Terminals section */
+
+
+    .sell-section .list-heading {
+        margin: 0 0 32px;
+    }
+
+    .sell-section {
+        padding: 104px 0 160px;
+    }
+
+    /* Wiring Terminals section end */
+
+    /* Automotive section */
+
+    .automotive .list-heading {
+        margin: 109px 0 32px;
+    }
+
+    /* Automotive section end */
+
+    /* hero top deals section */
+    .deals {
+        margin: 166px 0 79px;
+    }
+
+    .deals-section {
+        left: 112px;
+        gap: 30px;
+    }
+
+    .deals-section-heading h2 {
+        font-size: 84px;
+        line-height: 74px;
+    }
+
+    .deals-section-button a {
+        font-size: 20px;
+        line-height: 45.1px;
+        padding: 20px 40px;
+    }
+
+    /* hero top deals section end  */
+
+    /* footer section */
+    .footer-main {
+        padding: 47px;
+    }
+
+    .footer img {
+        margin-bottom: 50px;
+    }
+
+    .footer nav ul {
+        /* margin: 50px 0 64px; */
+        /* gap: 90px; */
+        padding: 16px 156px 12px 154px;
+    }
+
+    .footer nav ul li a {
+        font-size: 18px;
+        line-height: 19.5px;
+        padding: 0 50px;
+    }
+
+    .footer-contact {
+        margin: 64px 0;
+    }
+
+    /* .contact-list {
+        width: 189px;
+    }
+    
+    .Information-list {
+        width: 132px;
+    }
+    
+    .Shop-By-Categories {
+        width: 162px;
+    } */
+
+    .contact-list h2,
+    .Information-list h2,
+    .Shop-By-Categories h2 {
+        font-size: 16px;
+        line-height: 18.75px;
+        margin-bottom: 16px;
+    }
+
+    .Shop-By-Categories h2 {
+        margin-bottom: 8px;
+    }
+
+    .contact-list,
+    .Information-list {
+        padding-right: 46px;
+    }
+
+    .contact-list p,
+    .Information-list p,
+    .Shop-By-Categories p {
+        font-size: 16px;
+        line-height: 18.75px;
+    }
+
+    .mailto {
+        margin: 4px 0 24px;
+    }
+
+    .rules {
+        margin: 13px 0 14px;
+    }
+
+    .Shop-By-Categories {
+        gap: 8px;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    .container {
+        padding: 0 100px;
+    }
+
+    /* pancil section */
+
+
+    .pancil {
+        gap: 25px;
+        padding: 9px 0;
+    }
+
+    .pancil-contact {
+        font-size: 16px;
+        line-height: 18.75px;
+    }
+
+    .pancil-order {
+        font-size: 16px;
+        line-height: 18.75px;
+    }
+
+    .pancil-check {
+        gap: 15px;
+    }
+
+    .click {
+        width: 59px;
+        height: 28px;
+        border-radius: 30.27px;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .click::before {
+        left: 5px;
+        width: 21.52px;
+        height: 21.7px;
+        border-radius: 30.27px;
+    }
+
+    .checkbox:checked+label:before {
+        left: 31px;
+    }
+
+    .check-left,
+    .check-right {
+        font-size: 16px;
+        line-height: 18.75px;
+    }
+
+    /* pancil section end */
+
+    /* header section */
+
+    .header {
+        gap: 55px;
+        padding: 32px 0;
+    }
+
+    .header-search form .search {
+        width: 832px;
+        padding: 17px 120px 21px 68px;
+        font-size: 14px;
+        line-height: 16.41px;
+        background-image: url(./img/search.png);
+        background-position: 16px;
+    }
+
+    .header-search form .submit {
+        font-size: 16px;
+        line-height: 19.54px;
+        padding: 17px 43px 17px 44px;
+        right: 0;
+        border-radius: 5px;
+    }
+
+    .header-account {
+        gap: 110px;
+    }
+
+    .account-left {
+        gap: 4px;
+    }
+
+    .select {
+        font-size: 16px;
+        line-height: 18.75px;
+        background: url(./img/drop.png) no-repeat right 5px center;
+        background-size: 10px;
+    }
+
+    .account-right {
+        gap: 8px;
+    }
+
+    .cart-item .item-title {
+        font-size: 12px;
+        line-height: 14.06px;
+        letter-spacing: 0.04em;
+    }
+
+    .cart-item .item-price {
+        font-size: 18px;
+        line-height: 21.09px;
+    }
+
+    /* .navigation {
+        padding: 16px 0;
+    } */
+
+    /* .navigation nav ul {
+        gap: 71px;
+    } */
+
+    /* .navigation ul li {
+        width: 93px;
+    } */
+
+    .pic-title {
+        margin-top: 5px;
+        font-size: 16px;
+        line-height: 18.75px;
+    }
+
+    /* header section end */
+
+    /* heading */
+
+    .text-heading {
+        padding: 41px 0 38px;
+        margin-bottom: 43px;
+    }
+
+    .text-heading p {
+        font-size: 32px;
+        line-height: 37.5px;
+    }
+
+    /* heading end */
+
+    /* Top Selling Products section */
+
+    .products-heading h1 {
+        font-size: 48px;
+        line-height: 56.25px;
+    }
+
+    .list-heading {
+        gap: 17px;
+        margin: 39px 0 32px;
+    }
+
+    .list-heading p {
+        width: 6px;
+        height: 30px;
+        border-radius: 10px;
+    }
+
+    .list-heading h2 {
+        font-size: 30px;
+        line-height: 35.16px;
+    }
+
+    /* .card img {
+        width: 100%;
+    } */
+    .cards {
+        gap: 32px;
+        margin-bottom: 134px;
+    }
+
+    .card-deprication {
+        /* width: 25%; */
+        padding: 25px 24px;
+    }
+
+    .card-deprication .card-title {
+        font-size: 18px;
+        line-height: 21.09px;
+    }
+
+    .card-deprication h3 {
+        font-size: 24px;
+        line-height: 28.13px;
+        margin: 9px 0 34px;
+    }
+
+    .card-price {
+        gap: 8px;
+    }
+
+    .sell-price {
+        font-size: 24px;
+        line-height: 18px;
+    }
+
+    .products-price {
+        font-size: 16px;
+        line-height: 18.75px;
+        letter-spacing: 0.05em;
+    }
+
+    /* Top Selling Products section end */
+
+    /* Wiring Terminals section */
+
+
+    .sell-section .list-heading {
+        margin: 0 0 32px;
+    }
+
+    .sell-section {
+        padding: 104px 0 160px;
+    }
+
+    /* Wiring Terminals section end */
+
+    /* Automotive section */
+
+    .automotive .list-heading {
+        margin: 109px 0 32px;
+    }
+
+    /* Automotive section end */
+
+    /* hero top deals section */
+    .deals {
+        margin: 166px 0 79px;
+    }
+
+    .deals-section {
+        left: 112px;
+        gap: 30px;
+    }
+
+    .deals-section-heading h2 {
+        font-size: 84px;
+        line-height: 74px;
+    }
+
+    .deals-section-button a {
+        font-size: 20px;
+        line-height: 45.1px;
+        padding: 20px 40px;
+    }
+
+    /* hero top deals section end  */
+
+    /* footer section */
+    .footer-bottom {
+        width: 33.33%;
+    }
+
+    .footer-main {
+        padding: 47px;
+    }
+
+    .footer img {
+        margin-bottom: 50px;
+    }
+
+    .footer nav ul {
+        /* margin: 50px 0 64px; */
+        /* gap: 90px; */
+        padding: 16px 156px 12px 154px;
+    }
+
+    .footer nav ul li a {
+        font-size: 18px;
+        line-height: 19.5px;
+        padding: 0 50px;
+    }
+
+    .footer-contact {
+        margin: 64px 0;
+    }
+
+    /* .contact-list {
+        width: 189px;
+    }
+    
+    .Information-list {
+        width: 132px;
+    }
+    
+    .Shop-By-Categories {
+        width: 162px;
+    } */
+
+    .contact-list h2,
+    .Information-list h2,
+    .Shop-By-Categories h2 {
+        font-size: 16px;
+        line-height: 18.75px;
+        margin-bottom: 16px;
+    }
+
+    .Shop-By-Categories h2 {
+        margin-bottom: 8px;
+    }
+
+    .contact-list,
+    .Information-list {
+        padding-right: 46px;
+    }
+
+    .contact-list p,
+    .Information-list p,
+    .Shop-By-Categories p {
+        font-size: 16px;
+        line-height: 18.75px;
+    }
+
+    .mailto {
+        margin: 4px 0 24px;
+    }
+
+    .rules {
+        margin: 13px 0 14px;
+    }
+
+    .Shop-By-Categories {
+        gap: 8px;
+    }
+}
