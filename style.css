@@ -304,9 +304,14 @@ input#checkbox {
     font-family: "Roboto", sans-serif;
 }
 
+.slick-list {
+    margin: 0 -32px;
+}
+
 .card {
     background-color: #fff;
     width: 25%;
+    margin: 0 32px;
     box-shadow: 0 2px 14px rgba(0, 0, 0, .06);
     position: relative;
 }
@@ -346,8 +351,8 @@ input#checkbox {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 32px 134px;
-    /* margin-bottom: 134px; */
+    gap: 32px;
+    margin-bottom: 134px;
 }
 
 .card-deprication {
@@ -517,7 +522,7 @@ input#checkbox {
 
 .contact-list,
 .Information-list {
-    /* padding-right: 46px; */
+    padding-right: 46px;
     border-right: 1px solid #BDBDBD;
 }
 
@@ -1447,7 +1452,7 @@ input#checkbox {
     }
 
     .cards {
-        margin: 0 32px;
+        gap: 32px;
         margin-bottom: 134px;
     }
 
