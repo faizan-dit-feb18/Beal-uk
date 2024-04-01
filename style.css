@@ -346,8 +346,8 @@ input#checkbox {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 32px;
-    margin-bottom: 134px;
+    margin: 0 32px 134px;
+    /* margin-bottom: 134px; */
 }
 
 .card-deprication {
@@ -452,16 +452,22 @@ input#checkbox {
 
 .footer nav ul {
     display: flex;
+
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    /* flex-wrap: nowrap; */
     list-style-type: none;
-    padding: 16px 156px 12px 154px;
+    padding: 16px 0 12px 0;
+    border-top: 1px solid rgba(117, 117, 117, .3);
+    border-bottom: 1px solid rgba(117, 117, 117, .3);
 }
 
 .footer nav ul li a {
     font-size: 18px;
     font-weight: 400;
     line-height: 19.5px;
+    width: 100%;
+    text-align: center;
     padding: 0 50px;
     border-right: 1px solid #BDBDBD;
     font-family: "Roboto", sans-serif;
@@ -477,6 +483,10 @@ input#checkbox {
     justify-content: space-evenly;
     align-items: center;
     margin: 64px 0;
+}
+
+.footer-bottom {
+    width: 33.33%;
 }
 
 /* .contact-list {
@@ -507,7 +517,7 @@ input#checkbox {
 
 .contact-list,
 .Information-list {
-    padding-right: 46px;
+    /* padding-right: 46px; */
     border-right: 1px solid #BDBDBD;
 }
 
@@ -1437,7 +1447,7 @@ input#checkbox {
     }
 
     .cards {
-        gap: 32px;
+        margin: 0 32px;
         margin-bottom: 134px;
     }
 
